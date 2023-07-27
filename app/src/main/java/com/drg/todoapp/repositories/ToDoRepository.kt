@@ -2,6 +2,7 @@ package com.drg.todoapp.repositories
 
 import com.drg.todoapp.data.dao.ToDoDao
 import com.drg.todoapp.data.models.ToDoTask
+import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
@@ -13,6 +14,8 @@ import javax.inject.Inject
 /**
  * inside this repository, we are going to inject a dao access object
  */
+
+@ViewModelScoped
 class ToDoRepository @Inject constructor(private val toDoDao: ToDoDao) {
 
     val getAllTasks: Flow<List<ToDoTask>> = toDoDao.getAllTasks()
