@@ -3,6 +3,7 @@ Jetpack Compose - Android Development
 ------------------------------------
 
 Jetpack Compose - modern toolkit for building your native UI.
+
 ROOM Database - Room provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite
 
 ------------------------------------
